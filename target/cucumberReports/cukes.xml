@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="225.337">
+<testcase classname="user should be able to sign up with new account only once" name="User could register with valid data" time="28.068">
+<system-out><![CDATA[Given user click on Register................................................passed
+When user write his first name..............................................passed
+And user write his last name................................................passed
+And user write his Email....................................................passed
+And user write his password.................................................passed
+And user confirm his password...............................................passed
+And user click on register button...........................................passed
+Then user sign up successfully and success message is displayed.............passed
+]]></system-out>
+</testcase>
+<testcase classname="user should be able to login to the system" name="User could log in with valid email and password" time="11.287">
+<system-out><![CDATA[Given user navigates to login page..........................................passed
+And user click on login.....................................................passed
+When user enter his Email...................................................passed
+And user enter valid password...............................................passed
+And user click on login button..............................................passed
+Then user could login successfully..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Reset password" name="User could reset his/her password successfully" time="7.798">
+<system-out><![CDATA[Given user click on login...................................................passed
+And user click on Forgot password...........................................passed
+When user write his e_mail..................................................passed
+And press RECOVER button....................................................passed
+Then a message is displayed to the user.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User search for any product" name="Logged User could search for any product" time="14.655">
+<system-out><![CDATA[Given user navigates to login page..........................................passed
+And user click on login.....................................................passed
+When user enter his Email...................................................passed
+And user enter valid password...............................................passed
+And user click on login button..............................................passed
+Then user could login successfully..........................................passed
+When user click on search field and write product name......................passed
+And click on search button..................................................passed
+Then user`s product will found..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could switch between different currencies" name="Logged User could switch between currencies US-Euro" time="19.432">
+<system-out><![CDATA[Given user navigates to login page..........................................passed
+And user click on login.....................................................passed
+When user enter his Email...................................................passed
+And user enter valid password...............................................passed
+And user click on login button..............................................passed
+Then user could login successfully..........................................passed
+Given user press on dropdown menu and choose Euro...........................passed
+Then user choose Euro successfully..........................................passed
+And user press on dropdown menu and choose US Dollar........................passed
+Then user choose US Dollar successfully.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could select different categories" name="Logged user could select different Categories" time="20.394">
+<system-out><![CDATA[Given user navigates to login page..........................................passed
+And user click on login.....................................................passed
+When user enter his Email...................................................passed
+And user enter valid password...............................................passed
+And user click on login button..............................................passed
+Then user could login successfully..........................................passed
+When user select on Computers Categories....................................passed
+And user select on Electronics Categories...................................passed
+And hover to Cell phones subcategory........................................passed
+Then Cell phones appears successfully.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user could filter with color" name="Logged user could filter with color" time="12.297">
+<system-out><![CDATA[Given user navigates to login page..........................................passed
+And user click on login.....................................................passed
+When user enter his Email...................................................passed
+And user enter valid password...............................................passed
+And user click on login button..............................................passed
+Then user could login successfully..........................................passed
+Given user select a Apparel category then hover to Shoes subcategory........passed
+And user select shoes subCategory...........................................passed
+Then filter by Red color....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could select different tags" name="Logged user could select different tags" time="20.753">
+<system-out><![CDATA[Given user navigates to login page..........................................passed
+And user click on login.....................................................passed
+When user enter his Email...................................................passed
+And user enter valid password...............................................passed
+And user click on login button..............................................passed
+Then user could login successfully..........................................passed
+Given user navigate to computer category page...............................passed
+When user select cool from popular tags.....................................passed
+Then cool products appear successfully......................................passed
+And user select digital from popular tags...................................passed
+Then digital products appear successfully...................................passed
+And user select game from popular tags......................................passed
+Then game products appear successfully......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could add different products to Shopping cart" name="Logged user could add different products to Shopping cart" time="23.065">
+<system-out><![CDATA[Given user navigates to login page..........................................passed
+And user click on login.....................................................passed
+When user enter his Email...................................................passed
+And user enter valid password...............................................passed
+And user click on login button..............................................passed
+Then user could login successfully..........................................passed
+Given user navigate to jewelry category.....................................passed
+When user click on Flower Girl Bracelet.....................................passed
+And user click on Add to cart 1.............................................passed
+Then success message 1 appear...............................................passed
+And user press on x button..................................................passed
+And user click on Vintage Style Engagement Ring.............................passed
+And user click on Add to cart 2.............................................passed
+Then success message 2 appear...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could add different products to Wishlist" name="Logged user could add different products to Wishlist" time="20.189">
+<failure message="element not interactable&#10;  (Session info: chrome=102.0.5005.63)&#10;Build info: version: '4.2.1', revision: 'ac4d0fdd4a'&#10;System info: host: 'ADMIN-PC', ip: '192.168.1.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_331'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [92c3485bc2e3eecc0243ebe2017338a3, clickElement {id=a95433d7-e1b9-405b-a90d-6c00bba4cfb9}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49406/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (92c3485bc2e3eecc0243ebe2017338a3)] -&gt; css selector: a[href=&quot;/flower-girl-bracelet&quot;]]&#10;Session ID: 92c3485bc2e3eecc0243ebe2017338a3" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given user navigates to login page..........................................passed
+And user click on login.....................................................passed
+When user enter his Email...................................................passed
+And user enter valid password...............................................passed
+And user click on login button..............................................passed
+Then user could login successfully..........................................passed
+And user navigate to jewelry category.......................................passed
+Given user clicks on Flower Girl Bracelet...................................failed
+And click on Add to wishlist button.........................................skipped
+Then success message 1 appears..............................................skipped
+And user clicks on Vintage Style Engagement Ring............................skipped
+And click on Add to wishlist button2........................................skipped
+Then success message 2 appears..............................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=102.0.5005.63)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'ADMIN-PC', ip: '192.168.1.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_331'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [92c3485bc2e3eecc0243ebe2017338a3, clickElement {id=a95433d7-e1b9-405b-a90d-6c00bba4cfb9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49406/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (92c3485bc2e3eecc0243ebe2017338a3)] -> css selector: a[href="/flower-girl-bracelet"]]
+Session ID: 92c3485bc2e3eecc0243ebe2017338a3
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at stepDefinitions.D10_wishListStepDef.Flower_girl_bracelet1(D10_wishListStepDef.java:15)
+	at ✽.user clicks on Flower Girl Bracelet(file:///C:/Users/Admin/EcommerceMayCohort/src/main/resources/features/F10_wishList.feature:14)
+]]></failure>
+</testcase>
+<testcase classname="User could add different products to compare list" name="Logged user could add different products to compare list" time="23.681">
+<failure message="element not interactable&#10;  (Session info: chrome=102.0.5005.63)&#10;Build info: version: '4.2.1', revision: 'ac4d0fdd4a'&#10;System info: host: 'ADMIN-PC', ip: '192.168.1.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_331'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a73a524f44480d574b7e07b24c2ee321, clickElement {id=9e6e6ee3-13cd-469c-94ef-2313146f8780}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49425/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (a73a524f44480d574b7e07b24c2ee321)] -&gt; css selector: a[href=&quot;/flower-girl-bracelet&quot;]]&#10;Session ID: a73a524f44480d574b7e07b24c2ee321" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given user navigates to login page..........................................passed
+And user click on login.....................................................passed
+When user enter his Email...................................................passed
+And user enter valid password...............................................passed
+And user click on login button..............................................passed
+Then user could login successfully..........................................passed
+Given user navigate to jewelry category.....................................passed
+When user click on Flower Girl Bracelet.....................................failed
+And click on Add to compare list button.....................................skipped
+Then success msg 1 appears..................................................skipped
+And user press on Vintage Style Engagement Ring.............................skipped
+And click on Add to compare list button2....................................skipped
+Then success msg 2 appears..................................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=102.0.5005.63)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'ADMIN-PC', ip: '192.168.1.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_331'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a73a524f44480d574b7e07b24c2ee321, clickElement {id=9e6e6ee3-13cd-469c-94ef-2313146f8780}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49425/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a73a524f44480d574b7e07b24c2ee321)] -> css selector: a[href="/flower-girl-bracelet"]]
+Session ID: a73a524f44480d574b7e07b24c2ee321
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at stepDefinitions.D09_shoppingCartStepDef.Flower_girl_bracelet(D09_shoppingCartStepDef.java:22)
+	at ✽.user click on Flower Girl Bracelet(file:///C:/Users/Admin/EcommerceMayCohort/src/main/resources/features/F11_CompareList.feature:12)
+]]></failure>
+</testcase>
+<testcase classname="User could create successful order" name="Create successful Order" time="22.651">
+<failure message="element not interactable&#10;  (Session info: chrome=102.0.5005.63)&#10;Build info: version: '4.2.1', revision: 'ac4d0fdd4a'&#10;System info: host: 'ADMIN-PC', ip: '192.168.1.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_331'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [2edc88702d79044e751e3513f4fb71cf, clickElement {id=0a56587b-cc16-4272-9e8c-d7bdbbb97292}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49444}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49444/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (2edc88702d79044e751e3513f4fb71cf)] -&gt; css selector: a[href=&quot;/flower-girl-bracelet&quot;]]&#10;Session ID: 2edc88702d79044e751e3513f4fb71cf" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given user navigates to login page..........................................passed
+And user click on login.....................................................passed
+When user enter his Email...................................................passed
+And user enter valid password...............................................passed
+And user click on login button..............................................passed
+Then user could login successfully..........................................passed
+Given user navigate to jewelry category.....................................passed
+When user click on Flower Girl Bracelet.....................................failed
+And user click on Add to cart 1.............................................skipped
+Then success message 1 appear...............................................skipped
+And user click on Vintage Style Engagement Ring.............................skipped
+And user click on Add to cart 2.............................................skipped
+Then success message 2 appear...............................................skipped
+Given user click on shopping cart link......................................skipped
+And user choose to wrapped his order as a gift..............................skipped
+And user check on the agreement checkBox....................................skipped
+When user click on checkout button..........................................skipped
+And user write his company name.............................................skipped
+And user select his country.................................................skipped
+And user write his city.....................................................skipped
+And user write Address1.....................................................skipped
+And user write Address2.....................................................skipped
+And user write postalZip code...............................................skipped
+And user write his phone number.............................................skipped
+And user write his fax number...............................................skipped
+And user press continue button..............................................skipped
+And user check Ground.......................................................skipped
+And user press continue button2.............................................skipped
+And user check money order..................................................skipped
+And user press continue button3.............................................skipped
+And user press continue button4.............................................skipped
+And user press confirm button...............................................skipped
+Then order of the user will successfully processed..........................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=102.0.5005.63)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'ADMIN-PC', ip: '192.168.1.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_331'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2edc88702d79044e751e3513f4fb71cf, clickElement {id=0a56587b-cc16-4272-9e8c-d7bdbbb97292}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49444}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49444/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (2edc88702d79044e751e3513f4fb71cf)] -> css selector: a[href="/flower-girl-bracelet"]]
+Session ID: 2edc88702d79044e751e3513f4fb71cf
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at stepDefinitions.D09_shoppingCartStepDef.Flower_girl_bracelet(D09_shoppingCartStepDef.java:22)
+	at ✽.user click on Flower Girl Bracelet(file:///C:/Users/Admin/EcommerceMayCohort/src/main/resources/features/F12_successfulOrder.feature:13)
+]]></failure>
+</testcase>
+</testsuite>
